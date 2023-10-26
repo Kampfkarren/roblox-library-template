@@ -18,7 +18,7 @@
 			},
 			"Packages": {
 				"$path": "Packages",
-				"Tubes": {
+				"LibraryName": {
 					"$path": "src"
 				}
 			},
