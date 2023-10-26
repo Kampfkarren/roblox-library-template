@@ -1,0 +1,8 @@
+{
+	"languageMode": "strict",
+	"globals": [
+		"describe",
+		"expect",
+		"it"
+	]
+}

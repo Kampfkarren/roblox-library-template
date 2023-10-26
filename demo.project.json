@@ -1,0 +1,39 @@
+{
+	"name": "tubes-place",
+	"servePort": 12345,
+	"servePlaceIds": [
+		0,
+		95206881
+	],
+	"tree": {
+		"$className": "DataModel",
+		"HttpService": {
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"ReplicatedStorage": {
+			"DevPackages": {
+				"$path": "DevPackages"
+			},
+			"Packages": {
+				"$path": "Packages",
+				"Tubes": {
+					"$path": "src"
+				}
+			},
+			"Demo": {
+				"$path": "demo/shared"
+			}
+		},
+		"ServerScriptService": {
+			"$path": "demo/server"
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$path": "demo/client"
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      - id: selene
+        name: selene
+        language: system
+        entry: selene
+        types: [lua]
+      - id: luau-lsp
+        name: Analyze
+        language: system
+        entry: luau-lsp.exe analyze ./chat-demo/ --defs=globalTypes.d.lua --sourcemap=sourcemap.json --no-strict-dm-types --ignore=DevPackages/** --ignore=Packages/** --flag:LuauTinyControlFlowAnalysis=True
+        pass_filenames: false
+        types: [lua]
+  - repo: https://github.com/JohnnyMorganz/stylua
+    rev: v0.18.2
+    hooks:
+      - id: stylua-system
